@@ -118,43 +118,48 @@
     <section id="activitati" class="section">
       <div class="section-heading">
         <p class="section-kicker">Ce facem concret</p>
-        <h2>Ateliere și activități pentru tineri</h2>
+        <h2>Metodologii educaționale create și testate cu tinerii</h2>
+        <p>
+          Construim activități non-formale care pot fi duse direct în școli: sesiuni interactive,
+          exerciții de grup, simulări și instrumente prin care copiii își înțeleg mai bine drepturile,
+          comunitatea și puterea propriei voci.
+        </p>
       </div>
 
       <div class="cards-grid">
         <article class="info-card">
           <span class="icon">01</span>
-          <h3>Participare civică</h3>
+          <h3>Metodologii de participare civică</h3>
           <p>
-            Discuții și simulări despre comunitate, democrație, administrație publică
-            și rolul tinerilor în deciziile care îi privesc.
+            Simulări, dezbateri și exerciții prin care elevii descoperă cum se iau deciziile în comunitate
+            și cum pot contribui, întreba, propune și cere responsabilitate din partea autorităților.
           </p>
         </article>
 
         <article class="info-card">
           <span class="icon">02</span>
-          <h3>Drepturile copiilor</h3>
+          <h3>Metodologii despre drepturile copiilor</h3>
           <p>
-            Activități prin care elevii înțeleg mai bine drepturile lor, cum pot cere sprijin
-            și de ce vocea lor contează.
+            Activități practice prin care copiii înțeleg ce drepturi au, cum pot cere sprijin și de ce
+            vocea lor trebuie ascultată în deciziile care le afectează viața de zi cu zi.
           </p>
         </article>
 
         <article class="info-card">
           <span class="icon">03</span>
-          <h3>Climă și sustenabilitate</h3>
+          <h3>Metodologii pentru climă și sustenabilitate</h3>
           <p>
-            Ateliere despre schimbări climatice, responsabilitate față de mediu și soluții
-            pe care tinerii le pot vedea și aplica local.
+            Exerciții aplicate despre schimbări climatice, soluții locale și responsabilitate față de mediu,
+            adaptate pe înțelesul elevilor și conectate la realitatea comunităților lor.
           </p>
         </article>
 
         <article class="info-card">
           <span class="icon">04</span>
-          <h3>Media literacy</h3>
+          <h3>Metodologii de educație media</h3>
           <p>
-            Exerciții despre informații false, surse, social media, siguranță online
-            și felul în care consumăm conținut digital.
+            Jocuri și instrumente prin care tinerii învață să verifice informații, să recunoască manipularea
+            și să folosească social media într-un mod mai sigur, critic și responsabil.
           </p>
         </article>
       </div>
@@ -212,25 +217,35 @@
         </div>
       </div>
 
-      <form class="contact-form" action="mailto:office@casacuidei.org" method="post" enctype="text/plain">
-        <label>
+      <form class="contact-form" action="https://formsubmit.co/office@casacuidei.org" method="POST">
+        <input type="hidden" name="_subject" value="Mesaj nou de pe site-ul Casa cu Idei" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_next" value="https://casacuidei.org/multumim.html" />
+        <input
+          type="hidden"
+          name="_autoresponse"
+          value="Mulțumim că ai scris către Asociația Casa cu Idei. Am primit mesajul tău și revenim cât de curând. Echipa Casa cu Idei"
+        />
+        <input type="text" name="_honey" class="hidden-field" tabindex="-1" autocomplete="off" />
+
+        <label for="name">
           Nume
-          <input type="text" name="Nume" placeholder="Numele tău" />
+          <input id="name" type="text" name="name" placeholder="Numele tău" autocomplete="name" required />
         </label>
 
-        <label>
+        <label for="email">
           Email
-          <input type="email" name="Email" placeholder="email@exemplu.ro" />
+          <input id="email" type="email" name="email" placeholder="email@exemplu.ro" autocomplete="email" required />
         </label>
 
-        <label>
+        <label for="message">
           Mesaj
-          <textarea name="Mesaj" rows="5" placeholder="Scrie mesajul tău aici..."></textarea>
+          <textarea id="message" name="message" rows="5" placeholder="Scrie mesajul tău aici..." required></textarea>
         </label>
 
         <button type="submit">Trimite mesajul</button>
         <p class="form-note">
-          Notă: formularul deschide aplicația de email. Pentru un formular automat, putem conecta ulterior un serviciu extern.
+          Mesajul ajunge automat la office@casacuidei.org, iar persoana care completează formularul primește un email de confirmare.
         </p>
       </form>
     </section>
