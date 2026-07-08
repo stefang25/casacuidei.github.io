@@ -272,3 +272,103 @@ button { border: 0; padding: 16px 20px; border-radius: 999px; background: var(--
   .footer { flex-direction: column; }
   .footer-links { justify-content: flex-start; }
 }
+
+.donate-nav {
+  background: var(--yellow) !important;
+  color: var(--text) !important;
+}
+
+.button.donate-button {
+  background: var(--yellow);
+  color: var(--text);
+  box-shadow: 0 14px 34px rgba(242, 143, 59, 0.18);
+}
+
+.donation-section {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 24px;
+  align-items: stretch;
+  margin-top: 24px;
+}
+
+.donation-copy,
+.donation-action-card {
+  padding: 34px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--white);
+  box-shadow: 0 18px 40px rgba(23, 32, 26, 0.06);
+}
+
+.donation-copy {
+  background: linear-gradient(145deg, rgba(255, 213, 107, 0.92), rgba(255, 250, 240, 0.98));
+}
+
+.donation-copy p,
+.donation-action-card p {
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.donation-action-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+.donation-action-card .button {
+  width: fit-content;
+}
+
+@media (max-width: 980px) {
+  .donation-section { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 620px) {
+  .donation-action-card .button { width: 100%; }
+}
+
+/* Donații - buton vizibil pe toate ecranele */
+.floating-donate {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 999;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  padding: 0 22px;
+  border-radius: 999px;
+  background: var(--yellow);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 900;
+  box-shadow: 0 16px 40px rgba(23, 32, 26, 0.22);
+  border: 1px solid rgba(23, 32, 26, 0.12);
+}
+
+.button.big-donate {
+  min-height: 58px;
+  padding: 0 28px;
+  font-size: 17px;
+  border: 2px solid rgba(23, 32, 26, 0.08);
+}
+
+.donation-action-card .button.primary {
+  background: var(--yellow);
+  color: var(--text);
+  box-shadow: 0 14px 34px rgba(242, 143, 59, 0.22);
+}
+
+@media (max-width: 620px) {
+  .floating-donate {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    width: auto;
+  }
+  body { padding-bottom: 78px; }
+}
