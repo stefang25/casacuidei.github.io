@@ -1,17 +1,21 @@
-# Site Asociația Casa cu Idei
+# Casa cu Idei website
 
-Site static pentru GitHub Pages.
+Acest repository conține website-ul static pentru Asociația Casa cu Idei.
 
-## Cum îl publici
+## Publicare pe GitHub Pages
 
-1. În repository-ul GitHub Pages, șterge sau înlocuiește fișierele vechi.
-2. Urcă `index.html` și `style.css` în root-ul repository-ului.
-3. Verifică Settings → Pages → Branch: `main` / `/root`.
-4. Custom domain: `casacuidei.org`.
-5. După ce DNS-ul este valid, activează `Enforce HTTPS`.
+1. Înlocuiește fișierele existente din repository cu fișierele din acest ZIP.
+2. Păstrează fișierul `CNAME`, care setează domeniul `casacuidei.org`.
+3. Publică schimbările pe branch-ul folosit de GitHub Pages.
+4. Verifică live paginile:
+   - https://casacuidei.org/
+   - https://casacuidei.org/transparenta.html
+   - https://casacuidei.org/contact.html
 
-## De editat rapid
+## Important
 
-- Emailul din `index.html`: caută `contact@casacuidei.org`.
-- Textele despre impact: caută secțiunea `id="impact"`.
-- Culorile: editează variabilele din `style.css`, în zona `:root`.
+Înainte de a trimite site-ul către Google for Nonprofits, verifică datele legale din `transparenta.html` și footer:
+- CIF/CUI: 54410530
+- Sediu social: P-ța Ștefan cel Mare nr. 5, sc. III, et. II, ap. 19, Cluj-Napoca, jud. Cluj, România
+- Email: office@casacuidei.org
+- Domeniu oficial: casacuidei.org
