@@ -1,19 +1,15 @@
-# Date de verificat înainte de upload / retrimitere la Google
+# Date de verificat înainte de upload
 
-Am completat site-ul cu datele disponibile pentru Asociația Casa cu Idei:
+Am actualizat site-ul conform feedbackului:
 
-- Denumire: Asociația Casa cu Idei
-- CIF/CUI / Charity ID: 54410530
-- Sediu social / adresă fizică: P-ța Ștefan cel Mare nr. 5, sc. III, et. II, ap. 19, Cluj-Napoca, jud. Cluj, România
-- Email oficial: office@casacuidei.org
-- Domeniu oficial: casacuidei.org
-- Reprezentant legal: Grama Ștefan, Președinte
-- IBAN, dacă îl folosești pe site sau în viitor: RO06RNCB0301185501630001
+- sediul social/adresa fizică nu apare pe site;
+- au fost scoase bannerele și textele de tip „confirmarea domeniului oficial”;
+- pe pagina Contact nu mai apar CIF-ul și website-ul;
+- pagina Contact afișează doar emailul general, formularul și persoanele de contact.
 
-Înainte de upload, verifică neapărat:
+Înainte de upload, verifică:
 
-1. Dacă adresa de sediu social este exact cea din certificatul/actele asociației și din aplicația Google for Nonprofits.
-2. Dacă CIF/CUI 54410530 este exact identificatorul folosit în aplicația Google.
-3. Dacă reprezentantul legal afișat este cel din documentele curente.
-4. Dacă vrei să afișezi și numărul din Registrul Asociațiilor și Fundațiilor / numărul hotărârii de înființare. Nu l-am pus ca număr exact pentru că nu vreau să inventez un identificator juridic.
-5. Dacă pagina `transparenta.html` este accesibilă public după deploy.
+1. dacă CIF/CUI 54410530 este corect pe paginile unde rămâne afișat;
+2. dacă persoanele de contact și emailurile lor sunt corecte;
+3. dacă formularul de contact este confirmat în FormSubmit după prima trimitere;
+4. dacă site-ul este publicat pe branch-ul corect în GitHub Pages.

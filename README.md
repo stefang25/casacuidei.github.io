@@ -16,6 +16,5 @@ Acest repository conține website-ul static pentru Asociația Casa cu Idei.
 
 Înainte de a trimite site-ul către Google for Nonprofits, verifică datele legale din `transparenta.html` și footer:
 - CIF/CUI: 54410530
-- Sediu social: P-ța Ștefan cel Mare nr. 5, sc. III, et. II, ap. 19, Cluj-Napoca, jud. Cluj, România
 - Email: office@casacuidei.org
 - Domeniu oficial: casacuidei.org

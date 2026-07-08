@@ -75,7 +75,7 @@ a { color: inherit; }
 .section {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 92px 24px;
+  padding: 48px 24px;
 }
 
 .page-hero {
@@ -83,22 +83,24 @@ a { color: inherit; }
   grid-template-columns: 1.15fr 0.85fr;
   gap: 36px;
   align-items: center;
-  min-height: calc(100vh - 120px);
+  min-height: auto;
+  padding-top: 56px;
+  padding-bottom: 56px;
 }
 
-.page-title { padding-bottom: 42px; }
+.page-title { padding-top: 46px; padding-bottom: 24px; }
 .page-title h1,
 h1 {
   max-width: 980px;
   margin: 0 0 22px;
-  font-size: clamp(48px, 8vw, 96px);
+  font-size: clamp(42px, 7vw, 78px);
   line-height: 0.94;
   letter-spacing: -0.075em;
 }
 
 h2, h3, p { margin-top: 0; }
 .section h2 {
-  font-size: clamp(34px, 5vw, 64px);
+  font-size: clamp(30px, 4.5vw, 52px);
   line-height: 1;
   letter-spacing: -0.06em;
   margin-bottom: 18px;
@@ -218,15 +220,20 @@ blockquote { margin: 0; padding: 48px; border-radius: 36px; background: var(--ye
 .contact-details { display: grid; gap: 10px; margin-top: 28px; }
 .contact-details a, .contact-details span { padding: 16px 18px; border-radius: 18px; background: var(--bg-soft); text-decoration: none; font-weight: 800; }
 
-.people-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 24px 0; }
+.team-section { padding-top: 30px; }
+.team-section .section-heading { max-width: 880px; margin-bottom: 26px; }
+.people-list { display: grid; grid-template-columns: 1fr; gap: 14px; margin: 24px 0 16px; max-width: 980px; }
 .person-card { padding: 18px; border-radius: 20px; background: var(--bg-soft); border: 1px solid var(--line); }
-.person-card h3 { margin-bottom: 6px; font-size: 20px; }
-.person-card p { margin: 0 0 12px; color: var(--muted); font-weight: 800; }
-.person-card a { color: var(--green); font-weight: 900; text-decoration: none; overflow-wrap: anywhere; }
+.person-row { display: flex; align-items: center; justify-content: space-between; gap: 28px; padding: 22px 24px; }
+.person-card h3 { margin-bottom: 6px; font-size: 22px; }
+.person-card p { margin: 0; color: var(--muted); font-weight: 800; }
+.person-card a, .email-link { color: var(--green); font-weight: 900; text-decoration: none; white-space: nowrap; letter-spacing: -0.01em; font-size: clamp(14px, 1.4vw, 16px); }
+.team-note { max-width: 820px; color: var(--muted); font-weight: 700; }
 .contact-people { margin-top: 26px; display: grid; gap: 10px; }
 .contact-people h3 { font-size: 20px; margin-bottom: 4px; }
 .contact-people a { display: grid; gap: 4px; padding: 16px 18px; border-radius: 18px; background: var(--bg-soft); text-decoration: none; color: var(--text); }
 .contact-people a span { color: var(--muted); font-weight: 700; }
+.contact-people a em { color: var(--green); font-style: normal; font-weight: 900; white-space: nowrap; font-size: 14px; letter-spacing: -0.01em; }
 .contact-form { display: grid; gap: 16px; }
 .hidden-field { display: none; }
 label { display: grid; gap: 8px; color: var(--muted); font-weight: 800; }
@@ -253,10 +260,11 @@ button { border: 0; padding: 16px 20px; border-radius: 999px; background: var(--
 
 @media (max-width: 620px) {
   .site-header { padding: 14px 14px 0; }
-  .hero, .section { padding: 66px 16px; }
+  .hero, .section { padding: 36px 16px; }
   .page-hero { min-height: auto; }
-  h1, .page-title h1 { font-size: 54px; }
-  .mini-stats, .cards-grid, .cards-grid.three, .cards-grid.two, .impact-grid, .people-grid { grid-template-columns: 1fr; }
+  h1, .page-title h1 { font-size: 42px; }
+  .mini-stats, .cards-grid, .cards-grid.three, .cards-grid.two, .impact-grid { grid-template-columns: 1fr; }
+  .person-row { flex-direction: column; align-items: flex-start; gap: 8px; }
   .hero-actions { flex-direction: column; }
   .button { width: 100%; }
   blockquote { padding: 30px; }
