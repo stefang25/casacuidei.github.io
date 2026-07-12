@@ -3,68 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Date legale și informații publice despre Asociația Casa cu Idei." />
-  <title>Transparență și date legale | Casa cu Idei</title>
+  <meta name="description" content="Datele legale și informațiile publice ale Asociației Casa cu Idei." />
+  <meta name="theme-color" content="#173f35" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ro_RO" />
+  <meta property="og:title" content="Transparență | Casa cu Idei" />
+  <meta property="og:description" content="Date de identificare și informații publice despre Asociația Casa cu Idei." />
+  <meta property="og:image" content="https://casacuidei.org/social-preview.png" />
+  <title>Transparență | Casa cu Idei</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="site-header compact-header">
-  <nav class="navbar" aria-label="Navigare principală">
-    <a class="brand" href="index.html" aria-label="Casa cu Idei - prima pagină"><span>Casa cu Idei</span></a>
-    <div class="nav-links">
-      <a href="despre-noi.html">Despre noi</a><a href="ce-facem.html">Ce facem</a><a href="impact.html">Impact</a><a class="active" href="transparenta.html">Transparență</a><a href="contact.html">Contact</a><a class="nav-cta donate-nav" href="https://donate.stripe.com/aFa5kCbCO9TQ0difOL2Fa00" target="_blank" rel="noopener noreferrer">Donează</a>
-    </div>
-  </nav>
-</header>
-  <a class="floating-donate" href="https://donate.stripe.com/aFa5kCbCO9TQ0difOL2Fa00" target="_blank" rel="noopener noreferrer" aria-label="Donează acum prin Stripe">Donează acum</a>
-  <main>
-    
-<section class="section page-title">
-  <p class="section-kicker">Transparență</p>
-  <h1>Date legale și informații publice</h1>
-  <p>Aici sunt prezentate datele de identificare ale organizației și informațiile publice utile pentru parteneri, donatori și instituții.</p>
-</section>
-<section class="section legal-panel">
-  <div class="legal-card full">
-    <h2>Identificare organizație</h2>
-    <dl class="legal-list">
-      <div><dt>Denumire legală</dt><dd>Asociația Casa cu Idei</dd></div>
-      <div><dt>Tip organizație</dt><dd>Asociație / organizație non-guvernamentală fără scop patrimonial</dd></div>
-      <div><dt>Charity ID / Cod fiscal / CUI</dt><dd>54410530</dd></div>
-      <div><dt>Țară</dt><dd>România</dd></div>
-            <div><dt>Instanță de înregistrare</dt><dd>Judecătoria Cluj-Napoca</dd></div>
-      <div><dt>Reprezentant legal</dt><dd>Grama Ștefan, Președinte</dd></div>
-      <div><dt>Email oficial</dt><dd><a href="mailto:office@casacuidei.org">office@casacuidei.org</a></dd></div>
-      <div><dt>Website oficial</dt><dd><a href="https://casacuidei.org">https://casacuidei.org</a></dd></div>
-    </dl>
-  </div>
-</section>
-<section class="section two-column narrow-top">
-  <div>
-    <h2>Activitate nonprofit</h2>
-  </div>
-  <div class="text-block">
-    <p>Asociația Casa cu Idei sprijină dezvoltarea personală, civică și educațională a tinerilor prin educație non-formală, ateliere, metodologii educaționale, proiecte comunitare și activități desfășurate cu elevi, școli, voluntari și parteneri.</p>
-    <p>Organizația nu are scop patrimonial, este apolitică și independentă.</p>
-  </div>
-</section>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigare principală">
+      <a class="brand" href="index.html"><span>Casa cu Idei</span></a>
+      <button class="menu-toggle" type="button" aria-label="Deschide meniul" aria-controls="main-menu" aria-expanded="false"><span></span></button>
+      <div class="nav-links" id="main-menu">
+        <a href="despre-noi.html">Despre noi</a>
+        <a href="ce-facem.html">Ce facem</a>
+        <a href="impact.html">Impact</a>
+        <a class="active" aria-current="page" href="transparenta.html">Transparență</a>
+        <a href="contact.html">Contact</a>
+        <a class="donate-nav" href="https://donate.stripe.com/aFa5kCbCO9TQ0difOL2Fa00" target="_blank" rel="noopener noreferrer">Donează</a>
+      </div>
+    </nav>
+  </header>
 
+  <main>
+    <section class="page-title compact" id="top">
+      <p class="section-kicker">Transparență</p>
+      <h1>Date legale și informații publice.</h1>
+      <p>Informații de identificare utile pentru parteneri, donatori și instituții.</p>
+    </section>
+
+    <section class="section">
+      <dl class="legal-grid">
+        <div class="legal-card"><dt>Denumire legală</dt><dd>Asociația Casa cu Idei</dd></div>
+        <div class="legal-card"><dt>Tip organizație</dt><dd>Asociație fără scop patrimonial</dd></div>
+        <div class="legal-card"><dt>Charity ID / Cod fiscal / CUI</dt><dd>54410530</dd></div>
+        <div class="legal-card"><dt>Țară</dt><dd>România</dd></div>
+        <div class="legal-card"><dt>Instanță de înregistrare</dt><dd>Judecătoria Cluj-Napoca</dd></div>
+        <div class="legal-card"><dt>Reprezentant legal</dt><dd>Grama Ștefan, Președinte</dd></div>
+        <div class="legal-card"><dt>Email oficial</dt><dd><a href="mailto:office@casacuidei.org">office@casacuidei.org</a></dd></div>
+        <div class="legal-card"><dt>Website oficial</dt><dd><a href="https://casacuidei.org">casacuidei.org</a></dd></div>
+      </dl>
+    </section>
+
+    <section class="section two-column">
+      <div>
+        <p class="section-kicker">Activitate nonprofit</p>
+        <h2>Educație, participare și implicare.</h2>
+      </div>
+      <div class="body-copy">
+        <p>Asociația Casa cu Idei sprijină dezvoltarea personală, civică și educațională a tinerilor prin educație non-formală, ateliere, resurse educaționale, proiecte comunitare și activități desfășurate cu elevi, școli, voluntari și parteneri.</p>
+        <p>Organizația nu are scop patrimonial, este apolitică și independentă.</p>
+      </div>
+    </section>
   </main>
-  <footer class="footer legal-footer">
-  <div>
-    <strong>Asociația Casa cu Idei</strong><br />
-    CIF/CUI: 54410530<br />
-    Website oficial: <a href="https://casacuidei.org">casacuidei.org</a> · Email: <a href="mailto:office@casacuidei.org">office@casacuidei.org</a><br />
-    Reprezentant legal: Grama Ștefan, Președinte
-  </div>
-  <div class="footer-links">
-    <a href="transparenta.html">Transparență</a>
-    <a href="politica-confidentialitate.html">Confidențialitate</a>
-    <a href="index.html#top">Înapoi sus ↑</a>
-  </div>
-</footer>
+
+  <footer class="footer">
+    <div><strong>Asociația Casa cu Idei</strong><br />CIF/CUI: 54410530<br /><a href="mailto:office@casacuidei.org">office@casacuidei.org</a></div>
+    <div class="footer-links"><a href="transparenta.html">Transparență</a><a href="politica-confidentialitate.html">Confidențialitate</a><a href="#top">Înapoi sus ↑</a></div>
+  </footer>
 </body>
 </html>

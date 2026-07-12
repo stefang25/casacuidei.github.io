@@ -3,64 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Impactul Asociației Casa cu Idei: peste 1000 de elevi atinși prin activități educaționale și civice." />
+  <meta name="description" content="Impactul Casa cu Idei: peste 1.000 de elevi implicați, peste 30 de voluntari și patru arii tematice." />
+  <meta name="theme-color" content="#173f35" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ro_RO" />
+  <meta property="og:title" content="Impact | Casa cu Idei" />
+  <meta property="og:description" content="Rezultate construite prin ateliere, voluntariat și parteneriate cu școli." />
+  <meta property="og:image" content="https://casacuidei.org/social-preview.png" />
   <title>Impact | Casa cu Idei</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="site-header compact-header">
-  <nav class="navbar" aria-label="Navigare principală">
-    <a class="brand" href="index.html" aria-label="Casa cu Idei - prima pagină"><span>Casa cu Idei</span></a>
-    <div class="nav-links">
-      <a href="despre-noi.html">Despre noi</a><a href="ce-facem.html">Ce facem</a><a class="active" href="impact.html">Impact</a><a href="transparenta.html">Transparență</a><a href="contact.html">Contact</a><a class="nav-cta donate-nav" href="https://donate.stripe.com/aFa5kCbCO9TQ0difOL2Fa00" target="_blank" rel="noopener noreferrer">Donează</a>
-    </div>
-  </nav>
-</header>
-  <a class="floating-donate" href="https://donate.stripe.com/aFa5kCbCO9TQ0difOL2Fa00" target="_blank" rel="noopener noreferrer" aria-label="Donează acum prin Stripe">Donează acum</a>
-  <main>
-    
-<section class="section page-title">
-  <p class="section-kicker">Impact</p>
-  <h1>Peste 1000 de elevi atinși prin activități educaționale.</h1>
-  <p>Casa cu Idei construiește proiecte care conectează voluntari, școli și comunități în jurul educației non-formale.</p>
-</section>
-<section class="section impact">
-  <div class="impact-copy">
-    <p class="section-kicker">Rezultate</p>
-    <h2>Impactul este măsurat prin participare, încredere și acces.</h2>
-    <p>Ne concentrăm pe activități care îi ajută pe elevi să înțeleagă subiecte complexe într-un mod aplicat și accesibil. Atelierele noastre pun accent pe dialog, participare și învățare practică.</p>
-  </div>
-  <div class="impact-grid">
-    <div class="stat"><strong>1000+</strong><span>de elevi atinși prin activități</span></div>
-    <div class="stat"><strong>30+</strong><span>voluntari și facilitatori implicați</span></div>
-    <div class="stat"><strong>4</strong><span>arii tematice principale</span></div>
-    <div class="stat"><strong>1</strong><span>misiune: tineri mai implicați</span></div>
-  </div>
-</section>
-<section class="section">
-  <div class="section-heading">
-    <p class="section-kicker">Ce urmărim în continuare</p>
-    <h2>Dezvoltare sustenabilă a programelor educaționale</h2>
-    <p>Casa cu Idei urmărește să dezvolte metodologii replicabile, să formeze noi facilitatori și să extindă accesul la ateliere pentru mai mulți copii și tineri.</p>
-  </div>
-</section>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigare principală">
+      <a class="brand" href="index.html"><span>Casa cu Idei</span></a>
+      <button class="menu-toggle" type="button" aria-label="Deschide meniul" aria-controls="main-menu" aria-expanded="false"><span></span></button>
+      <div class="nav-links" id="main-menu">
+        <a href="despre-noi.html">Despre noi</a>
+        <a href="ce-facem.html">Ce facem</a>
+        <a class="active" aria-current="page" href="impact.html">Impact</a>
+        <a href="transparenta.html">Transparență</a>
+        <a href="contact.html">Contact</a>
+        <a class="donate-nav" href="https://donate.stripe.com/aFa5kCbCO9TQ0difOL2Fa00" target="_blank" rel="noopener noreferrer">Donează</a>
+      </div>
+    </nav>
+  </header>
 
+  <main>
+    <section class="page-title compact" id="top">
+      <p class="section-kicker">Impact</p>
+      <h1>Peste 1.000 de elevi implicați în activități educaționale.</h1>
+      <p>Prin Extraordinary Youth, conectăm voluntari, școli și comunități în jurul educației non-formale și al participării tinerilor.</p>
+    </section>
+
+    <section class="section">
+      <div class="metrics">
+        <article class="metric-card"><strong>1.000+</strong><p>elevi implicați</p></article>
+        <article class="metric-card"><strong>30+</strong><p>voluntari și facilitatori</p></article>
+        <article class="metric-card"><strong>4</strong><p>arii tematice principale</p></article>
+        <article class="metric-card"><strong>1</strong><p>misiune: tineri mai implicați</p></article>
+      </div>
+    </section>
+
+    <section class="section two-column">
+      <div>
+        <p class="section-kicker">Cum privim impactul</p>
+        <h2>Participare, încredere și acces.</h2>
+      </div>
+      <div class="body-copy">
+        <p>Atelierele noastre îi ajută pe elevi să înțeleagă subiecte complexe într-un mod practic și accesibil. Punem accent pe dialog, exercițiu și feedback.</p>
+        <p>În continuare, vrem să dezvoltăm resurse care pot fi replicate, să formăm noi facilitatori și să extindem accesul la activități pentru mai mulți copii și tineri.</p>
+      </div>
+    </section>
   </main>
-  <footer class="footer legal-footer">
-  <div>
-    <strong>Asociația Casa cu Idei</strong><br />
-    CIF/CUI: 54410530<br />
-    Website oficial: <a href="https://casacuidei.org">casacuidei.org</a> · Email: <a href="mailto:office@casacuidei.org">office@casacuidei.org</a><br />
-    Reprezentant legal: Grama Ștefan, Președinte
-  </div>
-  <div class="footer-links">
-    <a href="transparenta.html">Transparență</a>
-    <a href="politica-confidentialitate.html">Confidențialitate</a>
-    <a href="index.html#top">Înapoi sus ↑</a>
-  </div>
-</footer>
+
+  <footer class="footer">
+    <div><strong>Asociația Casa cu Idei</strong><br />CIF/CUI: 54410530<br /><a href="mailto:office@casacuidei.org">office@casacuidei.org</a></div>
+    <div class="footer-links"><a href="transparenta.html">Transparență</a><a href="politica-confidentialitate.html">Confidențialitate</a><a href="#top">Înapoi sus ↑</a></div>
+  </footer>
 </body>
 </html>

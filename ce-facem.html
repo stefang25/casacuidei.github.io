@@ -3,89 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Metodologii educaționale, ateliere și proiecte pentru tineri dezvoltate de Asociația Casa cu Idei." />
+  <meta name="description" content="Ateliere și proiecte Casa cu Idei despre participare civică, drepturile copiilor, climă și educație media." />
+  <meta name="theme-color" content="#173f35" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ro_RO" />
+  <meta property="og:title" content="Ce facem | Casa cu Idei" />
+  <meta property="og:description" content="Activități educaționale practice, create pentru elevi și comunități." />
+  <meta property="og:image" content="https://casacuidei.org/social-preview.png" />
   <title>Ce facem | Casa cu Idei</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="site-header compact-header">
-  <nav class="navbar" aria-label="Navigare principală">
-    <a class="brand" href="index.html" aria-label="Casa cu Idei - prima pagină"><span>Casa cu Idei</span></a>
-    <div class="nav-links">
-      <a href="despre-noi.html">Despre noi</a><a class="active" href="ce-facem.html">Ce facem</a><a href="impact.html">Impact</a><a href="transparenta.html">Transparență</a><a href="contact.html">Contact</a><a class="nav-cta donate-nav" href="https://donate.stripe.com/aFa5kCbCO9TQ0difOL2Fa00" target="_blank" rel="noopener noreferrer">Donează</a>
-    </div>
-  </nav>
-</header>
-  <a class="floating-donate" href="https://donate.stripe.com/aFa5kCbCO9TQ0difOL2Fa00" target="_blank" rel="noopener noreferrer" aria-label="Donează acum prin Stripe">Donează acum</a>
-  <main>
-    
-<section class="section page-title">
-  <p class="section-kicker">Ce facem</p>
-  <h1>Metodologii, ateliere și proiecte pentru tineri.</h1>
-  <p>Creăm activități educaționale care pot fi duse în școli și comunități, cu accent pe participare, drepturi, gândire critică și implicare.</p>
-</section>
-<section class="section">
-  <div class="cards-grid two">
-    <article class="info-card tall">
-      <span class="icon">01</span>
-      <h3>Metodologii de participare civică</h3>
-      <p>Exerciții prin care elevii înțeleg cum funcționează comunitatea, cum se iau deciziile publice și cum pot formula idei, întrebări și propuneri.</p>
-    </article>
-    <article class="info-card tall">
-      <span class="icon">02</span>
-      <h3>Metodologii despre drepturile copiilor</h3>
-      <p>Ateliere prin care copiii află ce drepturi au, cum pot cere sprijin și de ce opinia lor contează în deciziile care le afectează viața.</p>
-    </article>
-    <article class="info-card tall">
-      <span class="icon">03</span>
-      <h3>Metodologii pentru climă și sustenabilitate</h3>
-      <p>Activități despre schimbări climatice, soluții locale și responsabilitate față de mediu, adaptate pentru elevi și conectate la realitatea comunităților.</p>
-    </article>
-    <article class="info-card tall">
-      <span class="icon">04</span>
-      <h3>Metodologii de educație media</h3>
-      <p>Jocuri și instrumente prin care tinerii învață să verifice informații, să recunoască manipularea și să folosească mediul online în mod responsabil.</p>
-    </article>
-  </div>
-</section>
-<section class="section project-section">
-  <div class="section-heading">
-    <p class="section-kicker">Extraordinary Youth</p>
-    <h2>Programul nostru principal</h2>
-    <p>Extraordinary Youth aduce educația non-formală mai aproape de elevi prin sesiuni interactive, voluntari tineri și resurse adaptate școlilor și comunităților.</p>
-  </div>
-  <div class="project-story">
-    <div class="story-card large">
-      <h3>Cum lucrăm?</h3>
-      <p>Mergem în școli, pregătim voluntari, construim materiale, facilităm ateliere și colectăm feedback pentru a îmbunătăți constant metodologia.</p>
-    </div>
-    <div class="story-card">
-      <h3>Cu cine lucrăm?</h3>
-      <p>Cu elevi, profesori, școli, voluntari, organizații și parteneri care susțin accesul la educație non-formală.</p>
-    </div>
-    <div class="story-card">
-      <h3>Ce urmărim?</h3>
-      <p>Tineri mai informați, mai curajoși și mai pregătiți să participe la viața comunității.</p>
-    </div>
-  </div>
-</section>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigare principală">
+      <a class="brand" href="index.html"><span>Casa cu Idei</span></a>
+      <button class="menu-toggle" type="button" aria-label="Deschide meniul" aria-controls="main-menu" aria-expanded="false"><span></span></button>
+      <div class="nav-links" id="main-menu">
+        <a href="despre-noi.html">Despre noi</a>
+        <a class="active" aria-current="page" href="ce-facem.html">Ce facem</a>
+        <a href="impact.html">Impact</a>
+        <a href="transparenta.html">Transparență</a>
+        <a href="contact.html">Contact</a>
+        <a class="donate-nav" href="https://donate.stripe.com/aFa5kCbCO9TQ0difOL2Fa00" target="_blank" rel="noopener noreferrer">Donează</a>
+      </div>
+    </nav>
+  </header>
 
+  <main>
+    <section class="page-title compact" id="top">
+      <p class="section-kicker">Ce facem</p>
+      <h1>Ateliere și proiecte care dau sens ideilor.</h1>
+      <p>Creăm activități educaționale care pot fi duse direct în școli și comunități, cu accent pe participare, drepturi, gândire critică și implicare.</p>
+    </section>
+
+    <section class="section">
+      <div class="topic-list">
+        <article class="topic-item">
+          <span>01 · Participare civică</span>
+          <h3>Cum funcționează comunitatea</h3>
+          <p>Elevii descoperă cum se iau deciziile publice și cum pot formula idei, întrebări și propuneri.</p>
+        </article>
+        <article class="topic-item">
+          <span>02 · Drepturile copiilor</span>
+          <h3>Vocea lor contează</h3>
+          <p>Copiii află ce drepturi au, cum pot cere sprijin și de ce opinia lor trebuie ascultată.</p>
+        </article>
+        <article class="topic-item">
+          <span>03 · Climă și sustenabilitate</span>
+          <h3>Soluții conectate la realitate</h3>
+          <p>Discutăm despre schimbări climatice, soluții locale și responsabilitate față de mediu.</p>
+        </article>
+        <article class="topic-item">
+          <span>04 · Educație media</span>
+          <h3>Informație verificată</h3>
+          <p>Tinerii învață să recunoască manipularea, să verifice surse și să folosească mediul online responsabil.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section two-column">
+      <div>
+        <p class="section-kicker">Extraordinary Youth</p>
+        <h2>Programul nostru principal</h2>
+      </div>
+      <div class="body-copy">
+        <p>Extraordinary Youth aduce educația non-formală mai aproape de elevi prin sesiuni interactive, voluntari tineri și resurse adaptate școlilor și comunităților.</p>
+        <p>Pregătim voluntari, construim materiale, facilităm ateliere și colectăm feedback pentru a îmbunătăți constant activitățile.</p>
+        <div class="inline-actions"><a class="button primary" href="contact.html">Propune o colaborare</a></div>
+      </div>
+    </section>
   </main>
-  <footer class="footer legal-footer">
-  <div>
-    <strong>Asociația Casa cu Idei</strong><br />
-    CIF/CUI: 54410530<br />
-    Website oficial: <a href="https://casacuidei.org">casacuidei.org</a> · Email: <a href="mailto:office@casacuidei.org">office@casacuidei.org</a><br />
-    Reprezentant legal: Grama Ștefan, Președinte
-  </div>
-  <div class="footer-links">
-    <a href="transparenta.html">Transparență</a>
-    <a href="politica-confidentialitate.html">Confidențialitate</a>
-    <a href="index.html#top">Înapoi sus ↑</a>
-  </div>
-</footer>
+
+  <footer class="footer">
+    <div><strong>Asociația Casa cu Idei</strong><br />CIF/CUI: 54410530<br /><a href="mailto:office@casacuidei.org">office@casacuidei.org</a></div>
+    <div class="footer-links"><a href="transparenta.html">Transparență</a><a href="politica-confidentialitate.html">Confidențialitate</a><a href="#top">Înapoi sus ↑</a></div>
+  </footer>
 </body>
 </html>

@@ -3,50 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Confirmare trimitere mesaj către Asociația Casa cu Idei." />
-  <title>Mesaj trimis | Casa cu Idei</title>
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#173f35" />
+  <title>Mulțumim | Casa cu Idei</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="site-header compact-header">
-  <nav class="navbar" aria-label="Navigare principală">
-    <a class="brand" href="index.html" aria-label="Casa cu Idei - prima pagină"><span>Casa cu Idei</span></a>
-    <div class="nav-links">
-      <a href="despre-noi.html">Despre noi</a><a href="ce-facem.html">Ce facem</a><a href="impact.html">Impact</a><a href="transparenta.html">Transparență</a><a href="contact.html">Contact</a><a class="nav-cta donate-nav" href="https://donate.stripe.com/aFa5kCbCO9TQ0difOL2Fa00" target="_blank" rel="noopener noreferrer">Donează</a>
-    </div>
-  </nav>
-</header>
-  <a class="floating-donate" href="https://donate.stripe.com/aFa5kCbCO9TQ0difOL2Fa00" target="_blank" rel="noopener noreferrer" aria-label="Donează acum prin Stripe">Donează acum</a>
-  <main>
-    
-<section class="hero thanks-hero page-hero">
-  <div class="hero-content">
-    <p class="eyebrow">Mesaj trimis</p>
-    <h1>Mulțumim!</h1>
-    <p class="hero-text">Am primit mesajul tău. Echipa Casa cu Idei va reveni cât de curând la adresa de email completată în formular.</p>
-    <div class="hero-actions">
-      <a class="button primary" href="index.html">Înapoi la prima pagină</a>
-      <a class="button secondary" href="contact.html">Trimite alt mesaj</a>
-    </div>
-  </div>
-</section>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigare principală">
+      <a class="brand" href="index.html"><span>Casa cu Idei</span></a>
+      <button class="menu-toggle" type="button" aria-label="Deschide meniul" aria-controls="main-menu" aria-expanded="false"><span></span></button>
+      <div class="nav-links" id="main-menu">
+        <a href="despre-noi.html">Despre noi</a>
+        <a href="ce-facem.html">Ce facem</a>
+        <a href="impact.html">Impact</a>
+        <a href="transparenta.html">Transparență</a>
+        <a href="contact.html">Contact</a>
+        <a class="donate-nav" href="https://donate.stripe.com/aFa5kCbCO9TQ0difOL2Fa00" target="_blank" rel="noopener noreferrer">Donează</a>
+      </div>
+    </nav>
+  </header>
 
+  <main>
+    <section class="thanks-card">
+      <p class="section-kicker">Mesaj trimis</p>
+      <h1>Mulțumim!</h1>
+      <p>Am primit mesajul tău și revenim cât de curând.</p>
+      <div class="hero-actions" style="justify-content:center"><a class="button accent" href="index.html">Înapoi la pagina principală</a></div>
+    </section>
   </main>
-  <footer class="footer legal-footer">
-  <div>
-    <strong>Asociația Casa cu Idei</strong><br />
-    CIF/CUI: 54410530<br />
-    Website oficial: <a href="https://casacuidei.org">casacuidei.org</a> · Email: <a href="mailto:office@casacuidei.org">office@casacuidei.org</a><br />
-    Reprezentant legal: Grama Ștefan, Președinte
-  </div>
-  <div class="footer-links">
-    <a href="transparenta.html">Transparență</a>
-    <a href="politica-confidentialitate.html">Confidențialitate</a>
-    <a href="index.html#top">Înapoi sus ↑</a>
-  </div>
-</footer>
+
+  <footer class="footer">
+    <div><strong>Asociația Casa cu Idei</strong><br />CIF/CUI: 54410530<br /><a href="mailto:office@casacuidei.org">office@casacuidei.org</a></div>
+    <div class="footer-links"><a href="transparenta.html">Transparență</a><a href="politica-confidentialitate.html">Confidențialitate</a></div>
+  </footer>
 </body>
 </html>

@@ -3,72 +3,75 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Contactează Asociația Casa cu Idei pentru parteneriate, ateliere, voluntariat sau întrebări." />
+  <meta name="description" content="Contactează Asociația Casa cu Idei pentru parteneriate, activități în școli, voluntariat sau sponsorizări." />
+  <meta name="theme-color" content="#173f35" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ro_RO" />
+  <meta property="og:title" content="Contact | Casa cu Idei" />
+  <meta property="og:description" content="Scrie-ne pentru parteneriate, activități în școli, voluntariat sau sponsorizări." />
+  <meta property="og:image" content="https://casacuidei.org/social-preview.png" />
   <title>Contact | Casa cu Idei</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="site-header compact-header">
-  <nav class="navbar" aria-label="Navigare principală">
-    <a class="brand" href="index.html" aria-label="Casa cu Idei - prima pagină"><span>Casa cu Idei</span></a>
-    <div class="nav-links">
-      <a href="despre-noi.html">Despre noi</a><a href="ce-facem.html">Ce facem</a><a href="impact.html">Impact</a><a href="transparenta.html">Transparență</a><a class="active" href="contact.html">Contact</a><a class="nav-cta donate-nav" href="https://donate.stripe.com/aFa5kCbCO9TQ0difOL2Fa00" target="_blank" rel="noopener noreferrer">Donează</a>
-    </div>
-  </nav>
-</header>
-  <a class="floating-donate" href="https://donate.stripe.com/aFa5kCbCO9TQ0difOL2Fa00" target="_blank" rel="noopener noreferrer" aria-label="Donează acum prin Stripe">Donează acum</a>
-  <main>
-    
-<section class="section page-title">
-  <p class="section-kicker">Contact</p>
-  <h1>Scrie-ne</h1>
-  <p>Pentru parteneriate, activități în școli, voluntariat, sponsorizări sau întrebări legate de activitatea asociației.</p>
-</section>
-<section class="section contact-section narrow-top">
-  <div class="contact-card">
-    <p class="section-kicker">Date de contact</p>
-    <h2>Asociația Casa cu Idei</h2>
-    <div class="contact-details">
-      <a href="mailto:office@casacuidei.org">office@casacuidei.org</a>
-    </div>
-    <div class="contact-people">
-      <h3>Persoane de contact</h3>
-      <a class="contact-person" href="mailto:stefan.grama@casacuidei.org"><strong>Ștefan Grama</strong><span>Președinte</span><em>stefan.grama@casacuidei.org</em></a>
-      <a class="contact-person" href="mailto:matei.lostun@casacuidei.org"><strong>Matei Lostun</strong><span>Vicepreședinte și Projects Manager</span><em>matei.lostun@casacuidei.org</em></a>
-      <a class="contact-person" href="mailto:maria.dejeu@casacuidei.org"><strong>Maria Dejeu</strong><span>Vicepreședinte</span><em>maria.dejeu@casacuidei.org</em></a>
-      <a class="contact-person" href="mailto:adelina.muresan@casacuidei.org"><strong>Adelina Mureșan</strong><span>Core team member</span><em>adelina.muresan@casacuidei.org</em></a>
-    </div>
-  </div>
-  <form class="contact-form" action="https://formsubmit.co/office@casacuidei.org" method="POST">
-    <input type="hidden" name="_subject" value="Mesaj nou de pe site-ul Casa cu Idei" />
-    <input type="hidden" name="_template" value="table" />
-    <input type="hidden" name="_next" value="https://casacuidei.org/multumim.html" />
-    <input type="hidden" name="_autoresponse" value="Mulțumim că ai scris către Asociația Casa cu Idei. Am primit mesajul tău și revenim cât de curând. Echipa Casa cu Idei" />
-    <input type="text" name="_honey" class="hidden-field" tabindex="-1" autocomplete="off" />
-    <label for="name">Nume<input id="name" type="text" name="name" placeholder="Numele tău" autocomplete="name" required /></label>
-    <label for="email">Email<input id="email" type="email" name="email" placeholder="email@exemplu.ro" autocomplete="email" required /></label>
-    <label for="message">Mesaj<textarea id="message" name="message" rows="5" placeholder="Scrie mesajul tău aici..." required></textarea></label>
-    <label class="checkbox-label"><input type="checkbox" name="acord_confidentialitate" required /> Sunt de acord ca datele transmise să fie folosite pentru a primi răspuns la mesajul meu.</label>
-    <button type="submit">Trimite mesajul</button>
-    <p class="form-note">Mesajul ajunge automat la office@casacuidei.org, iar persoana care completează formularul primește un email de confirmare.</p>
-  </form>
-</section>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigare principală">
+      <a class="brand" href="index.html"><span>Casa cu Idei</span></a>
+      <button class="menu-toggle" type="button" aria-label="Deschide meniul" aria-controls="main-menu" aria-expanded="false"><span></span></button>
+      <div class="nav-links" id="main-menu">
+        <a href="despre-noi.html">Despre noi</a>
+        <a href="ce-facem.html">Ce facem</a>
+        <a href="impact.html">Impact</a>
+        <a href="transparenta.html">Transparență</a>
+        <a class="active" aria-current="page" href="contact.html">Contact</a>
+        <a class="donate-nav" href="https://donate.stripe.com/aFa5kCbCO9TQ0difOL2Fa00" target="_blank" rel="noopener noreferrer">Donează</a>
+      </div>
+    </nav>
+  </header>
 
+  <main>
+    <section class="page-title compact" id="top">
+      <p class="section-kicker">Contact</p>
+      <h1>Hai să construim ceva împreună.</h1>
+      <p>Pentru parteneriate, activități în școli, voluntariat, sponsorizări sau întrebări despre activitatea asociației.</p>
+    </section>
+
+    <section class="section contact-section">
+      <div class="contact-card">
+        <p class="section-kicker">Date de contact</p>
+        <h2>Asociația Casa cu Idei</h2>
+        <div class="contact-details"><a href="mailto:office@casacuidei.org">office@casacuidei.org</a></div>
+        <div class="contact-people" aria-label="Persoane de contact">
+          <a class="contact-person" href="mailto:stefan.grama@casacuidei.org"><strong>Ștefan Grama</strong><span>Președinte</span><em>stefan.grama@casacuidei.org</em></a>
+          <a class="contact-person" href="mailto:matei.lostun@casacuidei.org"><strong>Matei Lostun</strong><span>Vicepreședinte și Manager de proiect</span><em>matei.lostun@casacuidei.org</em></a>
+          <a class="contact-person" href="mailto:maria.dejeu@casacuidei.org"><strong>Maria Dejeu</strong><span>Vicepreședinte</span><em>maria.dejeu@casacuidei.org</em></a>
+          <a class="contact-person" href="mailto:adelina.muresan@casacuidei.org"><strong>Adelina Mureșan</strong><span>Core Team Member</span><em>adelina.muresan@casacuidei.org</em></a>
+        </div>
+      </div>
+
+      <form class="contact-form" action="https://formsubmit.co/office@casacuidei.org" method="POST">
+        <input type="hidden" name="_subject" value="Mesaj nou de pe site-ul Casa cu Idei" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_next" value="https://casacuidei.org/multumim.html" />
+        <input type="hidden" name="_autoresponse" value="Mulțumim că ai scris către Asociația Casa cu Idei. Am primit mesajul tău și revenim cât de curând. Echipa Casa cu Idei" />
+        <input type="text" name="_honey" class="hidden-field" tabindex="-1" autocomplete="off" />
+        <label for="name">Nume<input id="name" type="text" name="name" placeholder="Numele tău" autocomplete="name" required /></label>
+        <label for="email">Email<input id="email" type="email" name="email" placeholder="email@exemplu.ro" autocomplete="email" required /></label>
+        <label for="message">Mesaj<textarea id="message" name="message" rows="5" placeholder="Scrie mesajul tău aici..." required></textarea></label>
+        <label class="checkbox-label"><input type="checkbox" name="acord_confidentialitate" required /><span>Sunt de acord ca datele transmise să fie folosite pentru a primi răspuns la mesajul meu, conform <a href="politica-confidentialitate.html">politicii de confidențialitate</a>.</span></label>
+        <button type="submit">Trimite mesajul</button>
+      </form>
+    </section>
   </main>
-  <footer class="footer legal-footer">
-  <div>
-    <strong>Asociația Casa cu Idei</strong><br />
-    Email: <a href="mailto:office@casacuidei.org">office@casacuidei.org</a><br />
-    Reprezentant legal: Grama Ștefan, Președinte
-  </div>
-  <div class="footer-links">
-    <a href="transparenta.html">Transparență</a>
-    <a href="politica-confidentialitate.html">Confidențialitate</a>
-    <a href="index.html#top">Înapoi sus ↑</a>
-  </div>
-</footer>
+
+  <footer class="footer">
+    <div><strong>Asociația Casa cu Idei</strong><br />CIF/CUI: 54410530<br /><a href="mailto:office@casacuidei.org">office@casacuidei.org</a></div>
+    <div class="footer-links"><a href="transparenta.html">Transparență</a><a href="politica-confidentialitate.html">Confidențialitate</a><a href="#top">Înapoi sus ↑</a></div>
+  </footer>
 </body>
 </html>

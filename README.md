@@ -1,20 +1,21 @@
 # Casa cu Idei website
 
-Acest repository conține website-ul static pentru Asociația Casa cu Idei.
+Website static de prezentare pentru Asociația Casa cu Idei.
 
-## Publicare pe GitHub Pages
+## Publicare
 
-1. Înlocuiește fișierele existente din repository cu fișierele din acest ZIP.
-2. Păstrează fișierul `CNAME`, care setează domeniul `casacuidei.org`.
-3. Publică schimbările pe branch-ul folosit de GitHub Pages.
-4. Verifică live paginile:
-   - https://casacuidei.org/
-   - https://casacuidei.org/transparenta.html
-   - https://casacuidei.org/contact.html
+1. Înlocuiește fișierele din branch-ul `main` cu cele din această arhivă.
+2. Păstrează fișierul `CNAME` cu valoarea `casacuidei.org`.
+3. Fă commit și push pe `main`.
+4. Verifică site-ul după publicarea GitHub Pages.
 
-## Important
+## Fișiere principale
 
-Înainte de a trimite site-ul către Google for Nonprofits, verifică datele legale din `transparenta.html` și footer:
-- CIF/CUI: 54410530
-- Email: office@casacuidei.org
-- Domeniu oficial: casacuidei.org
+- `index.html` — pagina principală
+- `despre-noi.html` — prezentarea echipei
+- `ce-facem.html` — activități și Extraordinary Youth
+- `impact.html` — cifre de impact
+- `transparenta.html` — date legale
+- `contact.html` — contact și formular
+- `style.css` — design responsive
+- `script.js` — meniul mobil
